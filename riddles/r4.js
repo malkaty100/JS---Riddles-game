@@ -8,5 +8,5 @@ export default{id:4,
 name:"animal make",
 taskDescription:"What does a cow give us?",
 correctAnswer:"milk",
-choices:["honey","milk","eggs"]
+choices:["honey","milk","eggs"],difficulty:"hard",timeLimit:19,hint:"hint riddle4"
 }

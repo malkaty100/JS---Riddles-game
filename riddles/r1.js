@@ -8,5 +8,5 @@ export default{id:1,
 name:"easy Math",
 taskDescription:"What is 5 + 3?",
 correctAnswer:"8",
-choices:["5","12","8"]
+choices:["5","12","8"],difficulty:"easy",timeLimit:15,hint:"hint riddle1"
 }

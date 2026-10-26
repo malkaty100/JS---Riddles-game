@@ -8,6 +8,6 @@ export default{id:2,
 name:"Math",
 taskDescription:"What is 5* 2?",
 correctAnswer:"10",
-choices:["5","10","8"]
+choices:["5","10","8"],difficulty:"medium",timeLimit:20,hint:"hint riddle2"
 
 }

@@ -14,8 +14,8 @@ export default class Player{
         this.name=name
         this.times=[]
     }
-    recordTime(start, end){
-        this.times.push(end-start)
+    recordTime(start, end,penalty ){
+        this.times.push(end-start+penalty)
     }
     showStats(){
     let sum=0;

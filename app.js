@@ -16,15 +16,28 @@ import MultipleChoiceRiddle from './classes/MultipleChoiceRiddle.js';
 import Riddle from './classes/Riddle.js';
 import riddles from './riddles/index.js'
 const prompt = PromptSync();
+function shuffle(array) {
+    for (let i = array.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+
+        [array[i], array[j]] = [array[j], array[i]];
+    }
+}
 console.log('welcome to the game!');
+ const level = prompt('Choose difficulty: easy / medium / hard: ');
 const name=prompt("what's your name?")
 const player=new Player(name);
-riddles.forEach(element => {
+let penalty =0
+const filterdeRiddles=riddles.filter(item=>{return item.difficulty===level})
+shuffle(filterdeRiddles)
+filterdeRiddles.forEach(element => {
     const start=Date.now()/1000
-    const riddle=new MultipleChoiceRiddle(element.id,element.name,element.taskDescription,element.correctAnswer,element.choices)
-    riddle.ask(prompt)
+    const riddle=new MultipleChoiceRiddle(element.id,element.name,element.taskDescription,element.correctAnswer,element.choices,element.difficulty,element.timeLimit,element.hint)
+    penalty=riddle.ask(prompt)
      const end=Date.now()/1000
-     player.recordTime(start,end)
+     player.recordTime(start,end,penalty)
+     console.log(end-start);
+     
 
 
 });

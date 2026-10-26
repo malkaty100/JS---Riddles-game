@@ -8,6 +8,6 @@ export default{id:3,
 name:"animal",
 taskDescription:"What does a bee make??",
 correctAnswer:"honey"
-,choices:["honey","12","8"]
+,choices:["honey","12","8"],difficulty:"easy",timeLimit:15,hint:"hint riddle3"
 
 }

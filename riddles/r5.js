@@ -8,6 +8,6 @@ export default{id:5,
 name:"hard Math",
 taskDescription:"What is 5* 3?",
 correctAnswer:"15",
-choices:["5","12","15"]
+choices:["5","12","15"],difficulty:"medium",timeLimit:14,hint:"hint riddle5"
 
 }
