@@ -4,3 +4,9 @@
 // - name (string)
 // - taskDescription (string, the riddle text shown to the player)
 // - correctAnswer (string)
+export default{id:4,
+name:"animal make",
+taskDescription:"What does a cow give us?",
+correctAnswer:"milk",
+choices:["honey","milk","eggs"]
+}
