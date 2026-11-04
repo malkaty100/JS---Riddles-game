@@ -1,7 +1,7 @@
 import Riddle from "./Riddle.js";
 export default class MultipleChoiceRiddle extends Riddle{
-    constructor(id,name,taskDescription,correctAnswer,c,difficulty,timeLimit,hint){
-       super(id,name,taskDescription,correctAnswer)
+    constructor(name,taskDescription,correctAnswer,c,difficulty,timeLimit,hint){
+       super(name,taskDescription,correctAnswer)
        this.choices=c
        this.difficulty=difficulty
        this.timeLimit=timeLimit

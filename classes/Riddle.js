@@ -12,8 +12,8 @@
 //   - ask the player for an answer using the `prompt` function that is passed in
 //   - keep asking until the answer is correct
 export default class Riddle{
-    constructor(id,name,taskDescription,correctAnswer){
-        this.id=id
+    constructor(name,taskDescription,correctAnswer){
+        this.id=null
         this.name=name
         this.taskDescription=taskDescription
         this.correctAnswer=correctAnswer
